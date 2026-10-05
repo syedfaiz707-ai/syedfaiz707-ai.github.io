@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syed Faiz — Resume</title>
+<meta name="description" content="Resume of Syed Faiz — HR Head, business owner and builder of an HR & payroll SaaS platform.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--
+  HOW TO EDIT THIS RESUME
+  - Each job is one <article class="job"> block. To add a new job, copy a block and paste it above the others.
+  - Keep phone number and date of birth OUT of this file (it is public on the website).
+    They are added only to the private PDF by make-pdfs.mjs, at the PHONE and DOB marker comments.
+-->
+<style>
+  :root{
+    --ink:#18212f; --body:#2f3a4a; --muted:#5d6878; --line:#dfe3ea;
+    --accent:#b4532a; --accent-soft:#f6ece6; --chip:#f2f4f7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  @page{size:A4;margin:11mm 13mm 11mm 13mm}
+  html{background:#e9ecf1}
+  body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--body);font-size:9.6pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{max-width:210mm;margin:24px auto;background:#fff;padding:13mm 14mm;box-shadow:0 2px 24px rgba(20,30,50,.12)}
+  @media print{html{background:#fff}.page{margin:0;padding:0;box-shadow:none;max-width:none}.no-print{display:none!important}}
+  @media (max-width:640px){.page{margin:0;padding:20px 16px}}
+
+  header{display:grid;grid-template-columns:1fr auto;gap:6px 24px;align-items:end;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:27pt;letter-spacing:-.01em;color:var(--ink);line-height:1}
+  .role{grid-column:1/-1;font-size:10.5pt;font-weight:600;color:var(--accent);letter-spacing:.01em}
+  .contact{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:2px 14px;font-size:8.8pt;color:var(--muted)}
+  .contact a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+  .contact b{color:var(--ink);font-weight:600}
+
+  section{margin-top:10px}
+  h2{font-size:8.6pt;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  p.summary{font-size:9.6pt}
+
+  .job{break-inside:avoid;margin-bottom:7px}
+  .job-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+  .job h3{font-size:10.4pt;font-weight:700;color:var(--ink)}
+  .job h3 span{font-weight:500;color:var(--muted)}
+  .dates{font-size:8.6pt;font-weight:600;color:var(--muted);white-space:nowrap}
+  .dates.now{color:var(--accent)}
+  .job .meta{font-size:8.6pt;color:var(--muted);margin:1px 0 3px}
+  ul{padding-left:14px}
+  li{margin:1.5px 0}
+  li::marker{color:var(--accent)}
+  li b{color:var(--ink);font-weight:600}
+
+  .highlight{background:var(--accent-soft);border-left:3px solid var(--accent);padding:7px 10px;margin:4px 0 6px;font-size:9pt;break-inside:avoid}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:5px 0 6px}
+  .stat{background:var(--chip);border-radius:6px;padding:5px 8px}
+  .stat b{display:block;font-size:12.5pt;color:var(--ink);font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1}
+  .stat span{font-size:7.8pt;color:var(--muted)}
+
+  .ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px}
+  .ai-item{break-inside:avoid}
+  .ai-item h4{font-size:9.2pt;color:var(--ink);font-weight:700}
+  .ai-item p{font-size:8.9pt}
+
+  .skills{display:grid;grid-template-columns:96px 1fr;gap:5px 12px;font-size:9pt}
+  .skills dt{font-weight:700;color:var(--ink)}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+  .print-btn{position:fixed;right:18px;bottom:18px;font:600 13px Inter,sans-serif;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:10px 16px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+  .back{position:fixed;left:18px;bottom:18px;font:600 13px Inter,sans-serif;color:var(--ink);background:#fff;border-radius:999px;padding:10px 16px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+  @media (max-width:640px){header{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.ai-grid,.two-col{grid-template-columns:1fr}.skills{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header>
+  <h1>Syed Faiz</h1>
+  <div class="role">HR Head &nbsp;·&nbsp; Business Owner &nbsp;·&nbsp; HR-Tech &amp; AI Builder</div>
+  <div class="contact">
+    <span>Bangalore, Karnataka</span>
+    <!-- PHONE -->
+    <a href="mailto:syedfaiz707@gmail.com">syedfaiz707@gmail.com</a>
+    <span>Portfolio: <a href="https://syedfaiz707-ai.github.io">syedfaiz707-ai.github.io</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p class="summary">
+    People and operations leader with <b>10+ years</b> across retail, merchandising, e-commerce, hospitality and HR.
+    Currently <b>HR Head</b> for CJ Clothing Co (Cross Color) and Sphere, running the people function for
+    <b>250+ employees across two companies</b>. Founder and owner of <b>TALK with T Café</b>, and the founder and
+    product owner of a <b>complete HR &amp; payroll SaaS platform</b> that I designed and built with AI to bring the
+    group's attendance, leave, approvals and payroll in-house. Strong in statutory compliance, process design and
+    turning manual work into reliable systems.
+  </p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <!-- ====== JOB: HR Head ====== -->
+  <article class="job">
+    <div class="job-head">
+      <h3>HR Head <span>— CJ Clothing Co (Cross Color) &amp; Sphere, Bangalore</span></h3>
+      <div class="dates now">15 Oct 2025 – Present</div>
+    </div>
+    <ul>
+      <li>Lead end-to-end HR for <b>two group companies (250+ employees)</b>: hiring, onboarding, attendance, leave, payroll, employee relations, confirmations and exits.</li>
+      <li>Own monthly <b>payroll and statutory compliance (PF, ESI, Professional Tax, LWF, TDS)</b> for both companies, each filing under its own registrations.</li>
+      <li>Set up shift rosters, an 8-type leave policy (privilege, sick, comp-off, maternity, paternity, WFH, restricted holiday, LOP) and <b>biometric attendance</b> rules.</li>
+      <li>Moved all employee, salary-structure and attendance records off the previous HR system into the company's own platform, and <b>checked computed salaries line by line against the previous system's statements</b> before relying on them.</li>
+      <li>Rolled out <b>employee self-service</b> on mobile: payslips, leave, attendance regularisation, tax declarations, help desk and self-onboarding, with one approval console for managers.</li>
+      <li>Report directly to the business owner, providing MIS, headcount, attendance and statutory reports for decisions and government filings.</li>
+    </ul>
+  </article>
+
+  <!-- ====== JOB: SaaS founder ====== -->
+  <article class="job">
+    <div class="job-head">
+      <h3>Founder &amp; Product Owner <span>— HRMS &amp; Payroll SaaS Platform (owned by me)</span></h3>
+      <div class="dates now">Jul 2026 – Present</div>
+    </div>
+    <div class="highlight">
+      Designed, built and deployed a <b>full HR &amp; payroll suite in under 3 months, without a development team</b>, by directing AI
+      (Claude Code). Live on the group's own server for 250+ employees; commercial launch in progress.
+      <div class="stats">
+        <div class="stat"><b>300+</b><span>screens</span></div>
+        <div class="stat"><b>280+</b><span>data tables</span></div>
+        <div class="stat"><b>200</b><span>report gallery</span></div>
+        <div class="stat"><b>65</b><span>Excel importers</span></div>
+      </div>
+    </div>
+    <ul>
+      <li><b>Payroll engine</b> with Indian statutory compliance: PF, ESI, PT, LWF and income tax (TDS), plus arrears, loans, overtime, NPS and approval-gated salary revisions.</li>
+      <li><b>Attendance:</b> biometric swipe sync, shift rosters, auto-calculated attendance and month-end finalisation to loss-of-pay.</li>
+      <li><b>One approval console</b> for 9 request types (leave, regularisation, overtime, resignation, reimbursement, confirmation, help desk and more), with multi-level approvals and delegates.</li>
+      <li><b>Employee portal:</b> payslips, tax planner, proof of investment, documents, org chart, company feed and push notifications.</li>
+      <li>Run on a Linux server with automated cloud builds, a database backup before every update, automatic rollback and uptime alerts.</li>
+      <li>Own the commercial roadmap: brand name, pricing, marketing website and multi-company (multi-tenant) version.</li>
+    </ul>
+  </article>
+
+  <!-- ====== JOB: Cafe ====== -->
+  <article class="job">
+    <div class="job-head">
+      <h3>Founder &amp; Business Owner <span>— TALK with T Café, Bangalore</span></h3>
+      <div class="dates now">2025 – Present</div>
+    </div>
+    <ul>
+      <li>Founded and run a <b>25-seat café</b> serving pizzas, burgers, fries and beverages. Responsible for concept, set-up, menu and pricing.</li>
+      <li>Full <b>P&amp;L ownership</b>: purchasing, supplier negotiation, food-cost control, daily cash and accounts.</li>
+      <li>Hire, train and schedule the kitchen and service team. Set SOPs for in-house production, hygiene and consistent quality.</li>
+      <li>Drive footfall and repeat customers through local and social-media marketing and a focus on customer experience.</li>
+    </ul>
+  </article>
+
+  <!-- ====== JOB: Titan ====== -->
+  <article class="job">
+    <div class="job-head">
+      <h3>Deputy Manager <span>— Titan Company Ltd</span></h3>
+      <div class="dates">2021 – 2023</div>
+    </div>
+    <ul>
+      <li>Managed product listings and inventory on <b>Amazon, Flipkart, AJIO and Myntra</b>.</li>
+      <li>Planned and ran marketplace advertising campaigns to improve product visibility and sales.</li>
+      <li>Coordinated marketing, warehouse and category teams to keep listings, stock and pricing in sync.</li>
+    </ul>
+  </article>
+
+  <!-- ====== JOB: Sapna ====== -->
+  <article class="job">
+    <div class="job-head">
+      <h3>Merchandiser <span>— Sapna Book House</span></h3>
+      <div class="dates">2018 – 2021</div>
+    </div>
+    <ul>
+      <li>Managed shelf displays, product visibility and timely restocking, keeping <b>stock accurate across 18 stores</b>.</li>
+      <li>Built monthly sales plans to lift store performance and worked with cross-functional teams on business deliverables.</li>
+    </ul>
+  </article>
+
+  <!-- ====== JOB: Raymond ====== -->
+  <article class="job">
+    <div class="job-head">
+      <h3>Store Manager <span>— Raymond</span></h3>
+      <div class="dates">2015 – 2018</div>
+    </div>
+    <ul>
+      <li>Ran daily store operations, customer service and inventory control.</li>
+      <li>Introduced sales-monitoring routines and coached associates. <b>Met quarterly sales targets</b> through analysis and planning.</li>
+    </ul>
+  </article>
+</section>
+
+<section>
+  <h2>AI Skills — How I Use AI</h2>
+  <div class="ai-grid">
+    <div class="ai-item"><h4>Building software by directing AI</h4><p>Built and shipped a production SaaS (Next.js, PostgreSQL) with Claude Code. I write the requirements, review what it builds and decide what ships.</p></div>
+    <div class="ai-item"><h4>Screens to working software</h4><p>Turned 50+ screenshots of reference HR screens into precise specs, then into working modules, built and verified one batch at a time.</p></div>
+    <div class="ai-item"><h4>Checking AI work against real data</h4><p>Reconciled AI-built payroll against real salary statements. I use 70+ automated checks on live data and a second, independent AI review before work ships.</p></div>
+    <div class="ai-item"><h4>Data migration with AI</h4><p>Moved a company's full HR history from Excel exports through 65 importers. Every file is test-run and rolled back before anything is saved.</p></div>
+    <div class="ai-item"><h4>Rules and memory for AI</h4><p>Wrote standing rules the AI must follow (compliance, data safety, naming) and handover documents, so any AI or developer can continue the work safely.</p></div>
+    <div class="ai-item"><h4>Research and decisions</h4><p>Ran multi-agent AI research. For the product's brand name, 835 names were screened against domain availability and narrowed to a 4-name shortlist.</p></div>
+    <div class="ai-item"><h4>Compliance and operations</h4><p>Built a regulatory-update inbox and dated statutory ceilings (e.g. PF wage ceiling). Automated deployment, uptime alerts and notifications.</p></div>
+    <div class="ai-item"><h4>Everyday business work</h4><p>Excel and report analysis, ERP data look-ups, product-catalogue upload files, HR letters, policies and SOPs.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Core Skills</h2>
+  <dl class="skills">
+    <dt>HR</dt><dd>Recruitment &amp; onboarding · Payroll &amp; statutory compliance (PF, ESI, PT, LWF, TDS) · Attendance, leave &amp; shift management · HR policies &amp; SOPs · Employee relations &amp; engagement · HR MIS &amp; analytics · HRMS implementation &amp; data migration</dd>
+    <dt>Business</dt><dd>P&amp;L management · Retail &amp; store operations · Merchandising · E-commerce marketplaces · Vendor &amp; supplier management · Marketing · Team leadership · Customer service</dd>
+    <dt>Technology</dt><dd>Claude Code &amp; AI assistants · MS Office (advanced Excel, Word, PowerPoint) · HRMS &amp; payroll software · Next.js, React, PostgreSQL (through AI) · GitHub &amp; automated builds · Linux server deployment</dd>
+  </dl>
+</section>
+
+<section class="two-col">
+  <div>
+    <h2>Education</h2>
+    <ul>
+      <li><b>Bachelor of Business Management (B.B.M.)</b></li>
+      <li>Class 12 (Pre-University) · Class 10</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Personal</h2>
+    <ul>
+      <li><b>Languages:</b> English, Hindi, Kannada, Urdu</li>
+      <!-- DOB -->
+      <li><b>Interests:</b> Travelling, snooker, music</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<a class="back no-print" href="./">← Portfolio</a>
+<button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+</body>
+</html>
